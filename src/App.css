@@ -1,0 +1,84 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f2f5; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+
+.balance {
+  font-size: 64px;
+  font-weight: bold;
+  color: #27ae60; 
+  margin: 20px 0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  padding: 0 20px; 
+}
+@media (max-width: 600px) {
+  .button-group {
+    flex-direction: column; 
+    width: 100%;
+  }
+}
+
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 60 to;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  background-color: #3498db;
+  color: white;
+   width: 80%; 
+}
+
+button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+ 
+  
+}
+
+
+.withdraw { background-color: #e74c3c; }
+.reset { background-color: #95a5a6; }
+h1,
+p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.balance {
+  color: black; /* Normal hali siyah olsun */
+  transition: color 0.3s; /* Renk değişirken yumuşak geçsin */
+}
+
+.danger {
+  color: red !important; /* Kırmızı yap ve zorla! */
+  font-weight: bold;
+}
+.error-msg {
+  background-color: #ffeaa7;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #fab1a0;
+  display: inline-block;
+}
