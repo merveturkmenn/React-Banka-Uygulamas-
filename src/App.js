@@ -9,7 +9,7 @@ const reducer = (state, action) => {
     case 'para_cek':
       return { ...state, bakiye: state.bakiye - 100 };
     case 'sifirla':
-      return { bakiye: 0 };
+      return { ...state, bakiye:  0 };
     default:
       return state;
   }
@@ -18,7 +18,7 @@ const initialBalance = Number(localStorage.getItem('kayitli_bakiye')) || 0;
 
 function App() {
 
-  const [state, dispatch] = useReducer(reducer, { bakiye: initialBalance , kullanici: 'Merve'});
+  const [state, dispatch] = useReducer(reducer, { bakiye: initialBalance , kullanici: "Merve"});
 
   
   useEffect(() => {

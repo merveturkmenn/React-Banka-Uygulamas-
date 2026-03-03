@@ -39,6 +39,7 @@ h1 {
 
 
 button {
+  all: unset;
   padding: 12px 24px;
   font-size: 18px;
   font-weight: 60 to;
@@ -46,17 +47,20 @@ button {
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s, background-color 0.2s;
-  background-color: #3498db;
+background: #3498db;
   color: white;
    width: 80%; 
+  
 }
 
 button:hover {
-  transform: scale(1.05);
+   transition: transform 0.2s;
+  
   filter: brightness(1.1);
  
   
 }
+
 
 
 .withdraw { background-color: #e74c3c; }
